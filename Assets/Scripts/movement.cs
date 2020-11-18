@@ -37,7 +37,10 @@ public class movement : MonoBehaviour
 
         if (Input.GetKey("space"))
         {
-            Velocity.y = 3;
+            if (Velocity.y == 0)
+            {
+                Velocity.y += 5;
+            }
         }
 
         rb.velocity = Velocity;
