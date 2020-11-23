@@ -15,22 +15,22 @@ public class movement : MonoBehaviour
     void Update()
     {
         Vector3 Velocity = rb.velocity;
-        if (Input.GetKey("a"))
+        if (Input.GetKey("d"))
         {
             Velocity.x = -3;
         }
 
-        if (Input.GetKey("d"))
+        if (Input.GetKey("a"))
         {
             Velocity.x = 3;
         }
 
-        if (Input.GetKey("w"))
+        if (Input.GetKey("s"))
         {
             Velocity.z = 3;
         }
 
-        if (Input.GetKey("s"))
+        if (Input.GetKey("w"))
         {
             Velocity.z = -3;
         }
