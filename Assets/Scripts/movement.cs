@@ -14,7 +14,7 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 Velocity = rb.velocity;
+        Vector3 Velocity = rb.velocity;    
         if (Input.GetKey("d"))
         {
             Velocity.x = -3;
