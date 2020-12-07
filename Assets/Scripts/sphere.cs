@@ -9,24 +9,23 @@ public class sphere : MonoBehaviour
     public float lifeduration = 2f;
 
     private float lifetimer;
-    // Start is called before the first frame update
+
     void Start()
     {
         lifetimer = lifeduration;
     }
 
-    //collison
+    //collison with wall
 
     void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.name == "Cube")
+        if(col.gameObject.name == "Wall")
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         //make the bullet move
